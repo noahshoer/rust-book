@@ -2,5 +2,13 @@
 name = "minigrep"
 version = "0.1.0"
 edition = "2024"
+description = "A super original, complex project"
+# Need a license when you want to publish to crates.io
 
-[dependencies]
+# Force dev profile to have some optimizations
+[profile.dev]
+opt-level = 1
+
+# This is just the default for release to show it
+[profile.release]
+opt-level = 3
